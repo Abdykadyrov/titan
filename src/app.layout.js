@@ -14,7 +14,9 @@ const appLayout = Component => {
         return (
           <div>
             <Header />
-            <Component {...this.props} />
+            <div className="content uk-container">
+              <Component {...this.props} />
+            </div>
             <Footer />
           </div>
         );
