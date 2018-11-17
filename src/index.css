@@ -1,8 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 * {
-  font-family: "Roboto", "Open Sans", sans-serif !important;
+  font-family: "Roboto Slab", "Roboto", sans-serif !important;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #ffffff url("./resources/images/bg.jpg");
+  background: #ffffff;
 }
 
 code {
@@ -11350,11 +11351,19 @@ h3 {
     page-break-after: avoid;
   }
 }
-.content {
-  min-height: calc(100vh - 168px);
-  padding-top: 2em;
-  padding-bottom: 1em;
-  background: #ffffff;
+#toTop {
+  opacity: 0;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  background: #03afe1;
+  border-radius: 50%;
+  color: #fff !important;
+  transition: all 0.25s;
+}
+#toTop:hover {
+  background: #AD2F31;
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */

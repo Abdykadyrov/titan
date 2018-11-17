@@ -2,10 +2,24 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './style.css';
 
-class Index extends Component {
+class Header extends Component {
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    const navbar = document.getElementById("navbar");
+    const sticky = navbar.offsetTop;
+    if (window.pageYOffset > sticky)
+      navbar.classList.add("sticky");
+    else
+      navbar.classList.remove("sticky");
+  };
+
   render() {
     return (
-      <nav className="header uk-navbar-container uk-margin" data-uk-navbar data-uk-sticky="bottom: #offset">
+      <nav className="header" id="navbar">
         <div className="uk-navbar-center">
           <div className="uk-navbar-center-left">
             <div>
@@ -38,4 +52,4 @@ class Index extends Component {
   }
 }
 
-export default Index;
+export default Header;

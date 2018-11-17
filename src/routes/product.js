@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import appLayout from '../app.layout';
+import appLayout from '../layouts/app.layout';
 
 class Product extends Component {
   render() {

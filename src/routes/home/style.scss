@@ -1,0 +1,73 @@
+.home {
+  .headSection {
+    width: 100%;
+    padding: 5em 0;
+    background: #e9e9e9;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__title {
+      color: #03afe1;
+      font-weight: 700;
+      font-size: 64px;
+      margin: 0;
+    }
+    &__subtitle {
+      margin: 0;
+      color: #bd1e22;
+      font-size: 1.8em;
+    }
+    &__image {
+      text-align: center;
+      animation-name: slideFromTop;
+      animation-duration: 0.5s;
+      > img {
+        //filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
+        width: 300px;
+      }
+    }
+  }
+  .infoSection {
+    width: 100%;
+    padding: 5em 0;
+    background: #fff;
+    //background: #dadada;
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      li{
+        list-style: none;
+        color: #333;
+        font-size: 22px;
+        position: relative;
+        padding-left: 1.5em;
+        &:not(:first-of-type){
+          margin-top: 12px;
+        }
+      }
+      li:before{
+        content: '';
+        position: absolute;
+        top: 8px;
+        margin-left: -1.5em;
+        display: inline-block;
+        height: 16px;
+        width: 20px;
+        background: url('../../resources/images/flame.svg') no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  .sliderSection {
+    width: 100%;
+    padding: 5em 0;
+    background: #333;
+  }
+}
+
+@keyframes slideFromTop {
+  from {opacity: 0; transform: translate(0, -99px);}
+  to {opacity: 1; transform: translate(0, 0)}
+}
