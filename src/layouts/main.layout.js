@@ -16,10 +16,12 @@ const mainLayout = Component => {
 
       handleScroll = () => {
         const toTop = document.getElementById('toTop');
-        if (window.pageYOffset > (window.outerHeight / 2))
-          toTop.style.opacity = '1';
-        else
-          toTop.style.opacity = '0';
+        if (toTop) {
+          if (window.pageYOffset > (window.outerHeight / 2))
+            toTop.style.opacity = '1';
+          else
+            toTop.style.opacity = '0';
+        }
       };
 
       render() {
