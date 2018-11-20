@@ -30,7 +30,7 @@
 .home .infoSection {
   width: 100%;
   padding: 5em 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../../resources/images/full_tY77yfwb.webp") no-repeat fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../../resources/images/full_tY77yfwb.jpg") no-repeat fixed;
   background-size: cover;
 }
 .home .infoSection__list {
@@ -74,7 +74,7 @@
 .home .formSection {
   width: 100%;
   padding: 5em 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(180, 180, 180, 0.85), rgba(63, 63, 63, 0.95), #222222), url("../../resources/images/full_3NJthATQ.webp") no-repeat fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(180, 180, 180, 0.85), rgba(63, 63, 63, 0.95), #222222), url("../../resources/images/full_3NJthATQ.jpg") no-repeat fixed;
   background-size: cover;
 }
 
