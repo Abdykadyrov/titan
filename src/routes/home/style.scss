@@ -2,7 +2,7 @@
   .headSection {
     width: 100%;
     padding: 5em 0;
-    background: #e9e9e9;
+    background: #ffffff url("../../resources/images/concrete-wall.png");
     &__text {
       display: flex;
       flex-direction: column;
@@ -32,8 +32,12 @@
   .infoSection {
     width: 100%;
     padding: 5em 0;
-    background: #fff;
-    //background: #dadada;
+    //background: #fff url("../../resources/images/concrete-wall-2.png");
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 0.85)
+    ), url("../../resources/images/full_tY77yfwb.webp") no-repeat fixed;
+    background-size: cover;
     &__list {
       list-style: none;
       padding-left: 0;
@@ -60,10 +64,29 @@
       }
     }
   }
-  .sliderSection {
+  .priceSection {
     width: 100%;
     padding: 5em 0;
-    background: #333;
+    background: #fff url("../../resources/images/concrete-wall-2.png");
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+  .formSection {
+    width: 100%;
+    padding: 5em 0;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.75),
+        rgba(180, 180, 180, 0.85),
+        rgba(63, 63, 63, 0.95),
+        rgba(34, 34, 34, 1)
+    ), url("../../resources/images/full_3NJthATQ.webp") no-repeat fixed;
+    background-size: cover;
   }
 }
 

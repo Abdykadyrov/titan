@@ -24,17 +24,8 @@ class Header extends Component {
           <div className="uk-navbar-center-left">
             <div>
               <ul className="uk-navbar-nav">
-                <li className="uk-active"><Link to="/about">О компании</Link></li>
-                <li>
-                  <Link to="/">Parent</Link>
-                  <div className="uk-navbar-dropdown">
-                    <ul className="uk-nav uk-navbar-dropdown-nav">
-                      <li className="uk-active"><Link to="/">Active</Link></li>
-                      <li><Link to="/">Item</Link></li>
-                      <li><Link to="/">Item</Link></li>
-                    </ul>
-                  </div>
-                </li>
+                <li><Link to="/about">О компании</Link></li>
+                <li><a href="#services" data-uk-scroll>Услуги</a></li>
               </ul>
             </div>
           </div>
@@ -42,6 +33,7 @@ class Header extends Component {
           <div className="uk-navbar-center-right">
             <div>
               <ul className="uk-navbar-nav">
+                <li><a href="#price" data-uk-scroll>Прайс</a></li>
                 <li><Link to="/product">Продукция</Link></li>
               </ul>
             </div>

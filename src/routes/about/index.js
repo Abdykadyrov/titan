@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import appLayout from '../layouts/app.layout';
+import mainLayout from "../../layouts/main.layout";
 
-class About extends Component {
+class Index extends Component {
 
   componentDidMount(){
     this.loadMap();
@@ -40,8 +40,8 @@ class About extends Component {
 
   render() {
     return (
-      <div>
-        <article className="uk-article">
+      <section className="about">
+        <div className="uk-container">
           <div className="uk-flex">
             <div className="uk-width-1-2@l">
               <h1 className="uk-article-title">О компании</h1>
@@ -56,10 +56,10 @@ class About extends Component {
               <div id="map" style={{width: 100+'%', height: 30+'em'}}></div>
             </div>
           </div>
-        </article>
-      </div>
+        </div>
+      </section>
     )
   }
 }
 
-export default appLayout(About);
+export default mainLayout(Index);

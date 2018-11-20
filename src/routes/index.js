@@ -2,8 +2,8 @@ import React from "react";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Route, Switch } from 'react-router-dom';
 
-import Home from './home/home';
-import About from './about';
+import Home from './home/';
+import About from './about/';
 import Product from './product';
 
 const NotFound = () => <h2>NotFound</h2>;
